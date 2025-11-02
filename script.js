@@ -5,11 +5,10 @@
 
   if (!form) return;
 
-  // Загрузка конфигурации из config.js (не закоммичен в git)
-  const config = window.EMAILJS_CONFIG || {};
-  const EMAILJS_PUBLIC_KEY = config.publicKey;
-  const EMAILJS_SERVICE_ID = config.serviceId;
-  const EMAILJS_TEMPLATE_ID = config.templateId;
+  // TODO: replace with your actual EmailJS keys
+  const EMAILJS_PUBLIC_KEY = "Le2a6272rG99gqXc3_RxL";
+  const EMAILJS_SERVICE_ID = "service_1hwjpb4";
+  const EMAILJS_TEMPLATE_ID = "template_s6wwn6l";
 
   // Lazy guard if SDK not loaded
   if (window.emailjs && typeof window.emailjs.init === "function") {
